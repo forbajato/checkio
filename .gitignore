@@ -37,3 +37,6 @@ nosetests.xml
 
 #Jekyll stuff
 _site/
+
+#Don't save vim swap files
+*.swp
