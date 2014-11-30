@@ -3,10 +3,8 @@
 def checkio(data):
     #replace this for solution
 	 data_prime = [] #transformed matrix
-	 temp_list = []
-	 for i in data:
-		 temp_list.append(i.pop(0)) #This will get the first item in each element list and put them into a temporary list.
-	 data_prime.append(temp_list)
+	 for i in data[0]:
+		 data_prime.append([l.pop(0) for l in data])
 
 	 #These "asserts" using only for self-checking and not necessary for auto-testing
 	 if __name__ == '__main__':
